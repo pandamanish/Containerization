@@ -29,8 +29,7 @@ AWS Account with permissions to create an ECR repository.
 3. Create the Dockerfile
 4. Build the Docker Image
 In the same directory as the Dockerfile, run the following command to build the Docker image:
-```
-docker build -t manish_docker .```
+```docker build -t manish_docker .```
 
 5.Run the Docker Container
 Run the Docker container and map port 80 of the container to port 80 on your local machine:
