@@ -41,13 +41,13 @@ Create an ECR Repository
   2.Create a new public repository and note the repository URI.
 2. Authenticate Docker to Your ECR Repository
 Run the following command to authenticate Docker to your ECR:
-```aws ecr get-login-password --region <your-region> | docker login --username AWS --password-stdin <account-id>.dkr.ecr.<your-region>.amazonaws.com```
+```aws ecr get-login-password --region us-west-2 | docker login --username AWS --password-stdin 975050024946.dkr.ecr.us-west-2.amazonaws.com```
 3. Tag the Docker Image
 Tag your Docker image with the ECR repository URI:
-```docker tag my-nginx-image:latest <account-id>.dkr.ecr.<your-region>.amazonaws.com/my-nginx-image:latest```
+```docker tag manish_docker:latest 975050024946.dkr.ecr.us-west-2.amazonaws.com/manish_docker:latest```
 4. Push the Docker Image to ECR
 Push your Docker image to the ECR repository:
-```docker push <account-id>.dkr.ecr.<your-region>.amazonaws.com/my-nginx-image:latest```
+```docker push 975050024946.dkr.ecr.<your-region>.amazonaws.com/manish_docker:latest```
 
 # Conclusion
 
